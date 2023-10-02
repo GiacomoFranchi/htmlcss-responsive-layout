@@ -79,6 +79,8 @@
 .container{
     width: 100%;
     padding: 2rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .row{
@@ -177,6 +179,11 @@
 }
 
 /*TESTIMONIALS SECTION*/
+.container-v{
+    width: 90%;
+    margin: 0 auto;
+}
+
 .row-v{
     display: flex;
     flex-wrap: wrap;
@@ -215,6 +222,10 @@
     width: 100%;
     color: white;
 }
+
+.sinistra, .destra{
+    width: 100%;
+}
 @media screen and (min-width: 768px){
     .foto{
         width: 30%;
@@ -222,14 +233,32 @@
     .testo{
         width: 70%;
     }
+    .col2{
+        width:calc(100% / 2 - 2rem) ;
+        margin: 1rem;
+    }
+    .destra {
+        width: 30%;
+    }
+    .sinistra{
+        width: 68%;
+    }
+
 }
 
 @media screen and (min-width: 992px) {
-    .container{
+    .container-v{
         width: 70%;
         margin: 0 auto;
     }
     .row-v{
         width: 100%;
     }
+    .col2{
+        width: calc(100% / 3 - 2rem);
+        margin: 1rem;
+    }
 }
+
+
+/*ABOUT US*/
