@@ -105,6 +105,16 @@
 .span{
     margin: 2rem 0;
 }
+
+.nome{
+    color: var(--color-white);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.virgolette{
+    font-size: 2rem;
+}
 /*HEADER*/
 .header{
     width: 100%;
@@ -303,8 +313,27 @@
 
 /*TESTIMONIALS SECTION*/
 .container-v{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
+    padding: 4rem 1.5rem;
+    text-align: center;
+}
+
+.container-v h3{
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.container-v h2{
+    font-size: 2rem;
+    color: var(--color-violet);
+    margin-bottom: 2rem;
+}
+
+.container-v p{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .row-v{
@@ -327,24 +356,29 @@
     flex-wrap: wrap;
     background-color: var(--color-violet) ;
     border-radius: 25px;
+    padding: 0 1rem;
 }
 
 .foto{
     width: 100%;
     border-radius: 50%;
     margin: 0 auto;
-    height: 40%;
+    object-fit: contain;
 }
 
 .foto img{
-    width: 100%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
     border-radius: 50%;
+    margin: 1.5rem 0 1rem;
 }
 
 .testo{
     width: 100%;
     color: white;
 }
+
 
 .sinistra, .destra{
     width: 100%;
@@ -359,9 +393,15 @@
 @media screen and (min-width: 768px){
     .foto{
         width: 30%;
+        align-self: center;
     }
     .testo{
         width: 70%;
+        text-align: left;
+        margin: 3rem 0 2rem;
+    }
+    .testo p, .nome{
+        font-size: 1rem;
     }
     .col2{
         width:calc(100% / 2 - 2rem) ;
