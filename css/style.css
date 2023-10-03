@@ -3,24 +3,36 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
 }
 
+/*ROOTS*/
+:root{
+    --color-white: rgb(255, 255, 255);
+    --color-violet: rgb(151, 146, 228) ;
+    --color-blue:rgb(0, 132, 253);
+    --color-lightblue:rgb(181, 221, 255) ;
+    --color-gray:rgb(51, 51, 51);
+    --txt-color: rgb(90, 110, 127);
+}
 /*COMMON*/
 .size{
     transform: scale(2);
 }
 
+.size-2{
+    font-size: 6rem;
+    line-height: unset;
+}
 .lista{
     display: none;
     list-style: none;
 }
 
-.btn{
-    background-color: white;
+.btn-h{
     border-radius: 25px;
     padding: 1rem;
     display: none;
-    color: black ;
     text-decoration: none;
 }
 
@@ -30,13 +42,65 @@
 }
 
 .viola{
-    background-color: rgb(151, 146, 228) ;;
+    background-color: var(--color-violet);
 }
 
+.bianco{
+    background-color:var(--color-white) ;
+    color: black;
+}
+
+.azzurro{
+    color:var(--color-blue);
+}
+
+.btn-azzurro{
+    letter-spacing: 3px;
+    display: inline-block;
+    width: 80%;
+    border-radius: 25px;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: var(--color-blue);
+    color: white;
+    margin-bottom: 2rem;
+}
+.titolo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.titolo-l{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.p-card-l{
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--txt-color);
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.p-card{
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--txt-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.span{
+    margin: 2rem 0;
+}
 /*HEADER*/
 .header{
     width: 100%;
-    background-color:rgb(0, 132, 253) ;
+    background-color:var(--color-blue) ;
     padding: 1rem 0;
 }
 
@@ -59,7 +123,7 @@
     .tre-barre{
         display: none;
     }
-    .btn{
+    .btn-h{
         display: block;
     }
     .lista{
@@ -77,45 +141,57 @@
 
 .container{
     width: 100%;
+    margin: 0 auto;
     padding: 2rem 1rem;
     display: flex;
     flex-wrap: wrap;
 }
 
-.row{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
 /*GET A DEMO SECTION*/
-.col-grande{
+.card-grande{
+    background-color:var(--color-lightblue) ;
     width: 100%;
-    height: 200px;
-    margin: 2rem 0 1rem;
+    border-radius: 25px;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 2rem auto 1rem;
 }
 
-.col{
+.box-img{
+    width: 60%;
+    margin: 0 auto -1.8rem;
+}
+
+.box-img img{
     width: 100%;
-    height: 200px;
+}
+
+.box-p{
+    width: 100%;    
+}
+
+
+.card{
+    background-color:var(--color-lightblue) ;
+    width: 100%;
+    border-radius: 25px;
+    text-align: center;
+    padding: 1.5rem;
     margin: 1rem 0;
 }
 
-.card{
-    background-color:rgb(181, 221, 255) ;
-    height: 200px;
-    width: 100%;
-    border-radius: 25px;
-}
-
 @media screen and (min-width: 768px) {
-    .col-grande{
+    .row{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    .card-grande{
         width: calc(100% / 3 * 2 - 1rem);
         margin:0.5rem;
     }
-    .col{
+    .card{
         width: calc(100% / 3 - 1rem);
         margin:0.5rem;
     }
@@ -125,18 +201,32 @@
         width: 70%;
         margin: 0 auto;
     }
+    .card-grande{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+    .box-p{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+    .box-img{
+        width: 40%;
+
+    }   
 }
 
 /*PLANNING SECTION*/
 .container-viola{
-    background-color:rgb(151, 146, 228) ;
+    background-color:var(--color-violet) ;
     padding: 1.5rem 0;
 }
 
 .background{
     width: 90%;
     margin: 0 auto;
-    color: white;
+    color:var(--color-white);
     text-align: left;
     margin-bottom: 1rem;
 }
@@ -149,7 +239,7 @@
     padding: 0.5rem;
     width: 90%;
     margin: 0 auto;
-    background-color: white;
+    background-color:var(--color-white);
     text-align: center;
     border-radius: 25px;
 }
@@ -201,7 +291,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: rgb(151, 146, 228) ;
+    background-color: var(--color-violet) ;
     border-radius: 25px;
 }
 
@@ -276,6 +366,6 @@
 
 
 .container-footer{
-    background-color:rgb(51, 51, 51) ;
+    background-color:var(--color-gray);
     width: 100%;
 }
