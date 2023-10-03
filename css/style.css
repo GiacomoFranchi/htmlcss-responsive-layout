@@ -41,15 +41,6 @@
     color:white
 }
 
-.viola{
-    background-color: var(--color-violet);
-}
-
-.bianco{
-    background-color:var(--color-white) ;
-    color: black;
-}
-
 .azzurro{
     color:var(--color-blue);
 }
@@ -71,6 +62,26 @@
 .bg-violet{
     background-color: var(--color-violet);
 }
+
+.viola{
+    background-color: var(--color-violet);
+}
+
+.bianco{
+    background-color:var(--color-white) ;
+    color: black;
+}
+
+.bianco-v{
+    background-color: var(--color-white);
+    color: var(--color-violet);
+    display: block;
+    width: 70%;
+    margin: 2rem auto;
+    font-weight: bold;
+    padding: 1rem;
+}
+
 .titolo{
     font-size: 1.5rem;
     font-weight: bold;
@@ -135,6 +146,10 @@
     color: var(--color-violet);
     font-size: 4rem;
 }
+.a-bianco{
+    color: var(--color-white);
+}
+
 /*HEADER*/
 .header{
     width: 100%;
@@ -269,6 +284,10 @@
     .card-v h3{
         font-size: 1.2rem;
     }
+    .bianco-v{
+        width: 45%;
+
+    }
 }
 @media screen and (min-width: 992px) {
     .row{
@@ -290,6 +309,9 @@
     }   
     .card-v{
         width: calc(100% / 3 - 1.5rem);
+    }
+    .bianco-v{
+        width: 35%;
     }
 }
 
@@ -470,8 +492,36 @@
 /*get started*/
 .box{
     width: 90%;
-    margin: 0 auto
+    margin: 0 auto;
+    text-align: center;
 }
+.box h4{
+    font-size: 1.5rem;
+    color: var(--color-white);
+    font-weight: 200;
+    margin-bottom: 2rem;
+}
+
+.box h3{
+    font-size: 2rem;
+    color: var(--color-white);
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.box h2{
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(253, 193, 95) ;
+    margin-bottom: 3rem;
+}
+
+.box span{
+    color: var(--color-white);
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+}
+
 
 @media screen and (min-width: 768px){
     .foto{
