@@ -94,6 +94,14 @@
     text-align: center;
 }
 
+.circle{
+    background-color: var(--color-violet);
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 1rem 1.7rem;
+    margin:2rem 1rem ;
+}
+
 .span{
     margin: 2rem 0;
 }
@@ -220,7 +228,7 @@
 /*PLANNING SECTION*/
 .container-viola{
     background-color:var(--color-violet) ;
-    padding: 1.5rem 0;
+    padding: 4rem 0 5rem;
 }
 
 .background{
@@ -228,20 +236,44 @@
     margin: 0 auto;
     color:var(--color-white);
     text-align: left;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.background h2{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+.background p{
+    margin-bottom: 2rem;
+    line-height: 1.8rem;
 }
 
 .background img{
     width: 100%;
+    margin-bottom: 4rem;
 }
 
 .card-pl{
-    padding: 0.5rem;
+    padding: 2rem 1rem 3rem;
     width: 90%;
     margin: 0 auto;
     background-color:var(--color-white);
     text-align: center;
-    border-radius: 25px;
+    border-radius: 50px;
+}
+
+.card-pl h2{
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.card-pl p{
+    margin-bottom: 3rem;
+    font-style: italic;
+    font-weight: 550;
+    font-size: 1.2rem;
 }
 
 .card-pl img{
@@ -258,13 +290,15 @@
     .row-viola{
         width: 70%;
         display: flex;
-        justify-content: center;
         align-items: flex-end;
+        gap: 1rem;
     }
-    .background, .card-pl{
-        width: 30%;
+    .background .card-pl{
+        width: 45%;
     }
-
+    .card-pl img{
+        width: 60%;
+    }
 }
 
 /*TESTIMONIALS SECTION*/
